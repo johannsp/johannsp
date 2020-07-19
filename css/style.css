@@ -1,10 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/green_sky_4-wallpaper-1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+  margin-bottom: 1vw;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'UnifrakturMaguntia', cursive;
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+.avatar {
+  margin-left: 15vw;
+}
+
 .heading {
   text-align: center;
   color: white;
   background-color: black;
 }
+
 #left,
 #right {
-  float: left;
+  padding: 2vw;
+  margin: 3vw;
+  width: 90vw;
+  color: #A5FDD4;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
   margin: auto;
 }
+
