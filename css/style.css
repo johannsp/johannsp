@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Use green sky background with overall green color scheme */
 body {
   background-image: url("../images/green_sky_4-wallpaper-1920x1080.jpg");
   background-repeat: no-repeat;
@@ -26,25 +27,18 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  /**XXXXX** BEGIN Rem out **XXXXX**
-  ***X display: block;
-  ***XXXXX**  END  Rem out **XXXXX**/
+}
+
+h3 {
+  padding: 0.5rem;
 }
 
 p {
-  /**XXXXX** BEGIN Rem out **XXXXX**
-  ***X display: block;
-  ***XXXXX**  END  Rem out **XXXXX**/
   font-size: 1rem;
   padding: 1rem;
 }
 
-/**XXXXX** BEGIN Rem out **XXXXX**
-***X table {
-***X   display: block;
-***X }
-***XXXXX**  END  Rem out **XXXXX**/
-
+/* Adjust colors for links to green themed */
 a:link {
   color: limegreen;
 }
@@ -56,6 +50,24 @@ a:active {
 
 a:visited {
   color: #6F05FA;
+}
+
+/* Restore standard formatting for description list */
+dl {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+dt {
+  display: block;
+}
+
+dd {
+  display: block;
+  margin-left: 40px;
 }
 
 .avatar {
@@ -74,12 +86,13 @@ a:visited {
   color: #A5FDD4;
 }
 
+/* On regular sized screens use flex box for positioning */
 #left {
   flex: 0 0 38vw;
 }
 
 #right {
-  flex: 0 0 42;
+  flex: 0 0 42vw;
 }
 
 .flex-container {
@@ -101,11 +114,5 @@ a:visited {
 
   .flex-container {
     display: block;
-    /**XXXXX** BEGIN Rem out **XXXXX**
-    ***X display: flex;
-    ***X flex-flow: row wrap;
-    ***X justify-content: space-around;
-    ***X flex-flow: column wrap;
-    ***XXXXX**  END  Rem out **XXXXX**/
   }
 }
