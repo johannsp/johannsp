@@ -9,6 +9,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 header {
@@ -19,12 +20,42 @@ header {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: 'UnifrakturMaguntia', cursive;
 }
 
+h2 {
+  font-size: 2rem;
+  /**XXXXX** BEGIN Rem out **XXXXX**
+  ***X display: block;
+  ***XXXXX**  END  Rem out **XXXXX**/
+}
+
 p {
-  padding-bottom: 1rem;
+  /**XXXXX** BEGIN Rem out **XXXXX**
+  ***X display: block;
+  ***XXXXX**  END  Rem out **XXXXX**/
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+/**XXXXX** BEGIN Rem out **XXXXX**
+***X table {
+***X   display: block;
+***X }
+***XXXXX**  END  Rem out **XXXXX**/
+
+a:link {
+  color: limegreen;
+}
+
+a:hover,
+a:active {
+  color: #039183;;
+}
+
+a:visited {
+  color: #6F05FA;
 }
 
 .avatar {
@@ -33,21 +64,48 @@ p {
 
 .heading {
   text-align: center;
-  color: white;
+  color: #A5FDD4;
   background-color: black;
 }
 
 #left,
 #right {
-  padding: 2vw;
-  margin: 3vw;
-  width: 90vw;
+  margin: auto;
   color: #A5FDD4;
+}
+
+#left {
+  flex: 0 0 38vw;
+}
+
+#right {
+  flex: 0 0 42;
 }
 
 .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-around;
   margin: auto;
 }
 
+/* On small screens, we are no longer using row direction but column */
+@media all and (max-width: 675px) {
+  #left {
+    flex: 0 0 auto;
+  }
+
+  #right {
+    flex: 0 0 auto;
+  }
+
+  .flex-container {
+    display: block;
+    /**XXXXX** BEGIN Rem out **XXXXX**
+    ***X display: flex;
+    ***X flex-flow: row wrap;
+    ***X justify-content: space-around;
+    ***X flex-flow: column wrap;
+    ***XXXXX**  END  Rem out **XXXXX**/
+  }
+}
