@@ -40,16 +40,16 @@ p {
 
 /* Adjust colors for links to green themed */
 a:link {
-  color: limegreen;
+  color: #01410A;
 }
 
 a:hover,
 a:active {
-  color: #039183;;
+  color: #01033C;
 }
 
 a:visited {
-  color: #6F05FA;
+  color: #120123;
 }
 
 /* Restore standard formatting for description list */
@@ -87,10 +87,6 @@ dd {
 }
 
 /* On regular sized screens use flex box for positioning */
-#left {
-  flex: 0 0 38vw;
-}
-
 #right {
   flex: 0 0 42vw;
 }
@@ -104,10 +100,6 @@ dd {
 
 /* On small screens, we are no longer using row direction but column */
 @media all and (max-width: 675px) {
-  #left {
-    flex: 0 0 auto;
-  }
-
   #right {
     flex: 0 0 auto;
   }

@@ -5,5 +5,5 @@ Link:
 https://johannsp.github.io/
 
 Preview:
-[![Johann-SP-preview-20200719.png](https://i.postimg.cc/ZnyBf8zD/Johann-SP-preview-20200719.png)](https://postimg.cc/kRqgGt4x)
+[![Johann-SP-preview-20200720.png](https://i.postimg.cc/D0W4wLks/Johann-SP-preview-20200720.png)](https://postimg.cc/7JkZBCLY)
 
