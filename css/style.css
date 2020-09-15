@@ -6,7 +6,7 @@
 
 /* Use green sky background with overall green color scheme */
 body {
-  background-image: url("../images/green_sky_4-wallpaper-1920x1080.jpg");
+  background-image: url("../images/green_sky_4-wallpaper-_01_1388x1080.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -40,16 +40,16 @@ p {
 
 /* Adjust colors for links to green themed */
 a:link {
-  color: #01410A;
+  color: #23E5FB;
 }
 
 a:hover,
 a:active {
-  color: #01033C;
+  color: #78EFFC;
 }
 
 a:visited {
-  color: #120123;
+  color: #B9B4FD;
 }
 
 /* Restore standard formatting for description list */
